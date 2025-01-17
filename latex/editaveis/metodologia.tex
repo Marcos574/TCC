@@ -116,11 +116,8 @@ A estratégia de busca dessa RSL foi elaborada utilizando como base o modelo PIC
 Com base nos elementos do modelo PICOC, principalmente nas palavras-chave, uma string de busca foi desenvolvida utilizando operadores booleanos (AND, OR) para combinar os termos identificados e realizar a busca pelos estudos nas bases de dados definidas. A string foi adaptada para cada base de dados utilizada, visando respeitas suas especificidades. Logo abaixo a string base é apresentada:
 
 
-\textbf{(("prototyping" OR "prototyping techniques" OR "prototyping tools" OR "prototyping process") AND 
-("process" OR "methods" OR "outcomes" OR "results")) 
-\newline      OR \newline 
-(("service design" OR "service prototyping" OR "service development") AND 
-("prototyping" OR "prototyping tools" OR "prototyping techniques"))}
+( ( ``prototyping'' OR ``prototyping techniques'' OR ``prototyping tools'' OR ``prototyping process'' ) AND ( ``process'' OR ``methods'' OR ``outcomes'' OR ``results'' ) AND ( ``service design'' OR ``service prototyping'' OR ``service development'' ) )
+
 
 \subsection{Bases de dados}
 
@@ -132,7 +129,7 @@ Para realizar uma triagem primária, alguns critérios de inclusão e exclusão 
 
 Critérios de inclusão:
 \begin{itemize}
-	\item O trabalho deve ter sido publicado após o ano de xxx.
+	\item O trabalho deve ter sido publicado após o ano de 2021.
 	
 	\item O trabalho deve estar disponível nas bases de dados previamente definidas.
 	
@@ -168,17 +165,18 @@ O procedimento de seleção dos artigos para o estudo obedeceu uma sequência de
 \begin{table}[h!]
 	\centering
 	\label{tab:triagem}
-	\begin{tabular}{|c|c|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
-		\textbf{Passo} & \textbf{Estudos selecionados} \\ \hline
-		1 & x \\ \hline
-		2 & x \\ \hline
-		3 & x \\ \hline
-		4 & x \\ \hline
-		5 & x \\ \hline
+		\textbf{Passo} & \textbf{Scopus} & \textbf{CAPES} & \textbf{Total} \\ \hline
+		1 & 156 & 602 & 758\\ \hline
+		2 & 39 & 125 & 164\\ \hline
+		3 & 39 & 85 & 124\\ \hline
+		4 & 10 & x & x\\ \hline
+		5 & x & x & x\\ \hline
 	\end{tabular}
-	\caption{Quantidade de artigos após cada passo da triagem}
+	\caption{Quantidade de artigos após cada passo da triagem nas bases}
 \end{table}
+
 
 \subsection{Seleção de estudos primários}
 
