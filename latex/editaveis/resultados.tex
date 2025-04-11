@@ -271,7 +271,7 @@ A aplicabilidade temporal também pode ser influenciada pelo contexto específic
 
 A quarta questão de pesquisa investigou quais ferramentas de prototipagem são mais utilizadas no DS, com base nos artigos analisados. Identificar as ferramentas ``mais utilizadas'' de forma definitiva a partir dos artigos é um desafio, pois muitos estudos focam nas técnicas e processos, mencionando os artefatos resultantes (\textit{mockups, wireframes}, etc.) sem especificar o software ou material exato empregado. Porém, a análise permitiu identificar categorias de ferramentas e exemplos específicos, com um estudo \citeonline{wang2023smartproducts} fornecendo dados empíricos sobre a frequência de uso.
 
-\subsection{Frequência de uso de ferramentas (dados empíricos)}
+\subsection{Frequência de uso de ferramentas}
 
 O estudo de \citeonline{wang2023smartproducts}, ao investigar designers envolvidos no desenvolvimento de produtos inteligentes (que frequentemente incluem serviços), fornece dados quantitativos sobre a frequência de uso de 13 ferramentas comuns. Seus achados indicam que ferramentas fundamentais como esboços manuais e CAD são as mais frequentemente utilizadas no geral. No entanto, ferramentas cruciais para o DS e UX, como jornada do usuário, \textit{wireframe} e \textit{storyboard}, também são relatadas como de uso frequente, embora os autores notem uma satisfação por vezes menor com a capacidade de comunicação dessas ferramentas no contexto específico de produtos inteligentes \cite{wang2023smartproducts}. Outras ferramentas avaliadas incluíram esboços digitais, fluxogramas, cartão, LEGO, argila/espuma, impressão 3D, AR e VR \cite{wang2023smartproducts}.
 
@@ -299,10 +299,91 @@ A análise revelou que, enquanto ferramentas básicas como papel e lápis (ou se
 
 %Use uma tabela comparativa para destacar funcionalidades e limitações.
 
+\section{Comparação entre ferramentas}
+
+A quinta questão de pesquisa teve como objetivo compreender como as ferramentas e técnicas de prototipagem identificadas se comparam em termos de funcionalidades e adequação às diferentes etapas do processo de DS. A análise dos artigos selecionados mostra que, embora não exista um modelo comparativo único e universalmente aplicado, diversos estudos realizam comparações implícitas ou explícitas com base em critérios chave, como nível de fidelidade, adequação ao estágio do processo, funcionalidade principal e fatores contextuais.
+
+\subsection{Comparação por nível de fidelidade e adequação ao estágio}
+
+A dimensão mais frequentemente utilizada para comparar abordagens de prototipagem é o nível de fidelidade (baixa, média, alta), que está fortemente ligado ao estágio do processo de design e ao objetivo da prototipagem naquele momento.
+
+Em relação aos protótipos de \textbf{baixa fidelidade}, ferramentas como esboços em papel ou digitais, protótipos em papel, \textit{mockups} simples (digitais ou com materiais básicos como argila, cartão, LEGO), modelos conceituais descritivos e métodos criativos (desenho, atuação, artesanato) são consistentemente associados às fases iniciais do design (exploração, ideação, conceito inicial). Sua principal adequação está na rapidez, baixo custo e flexibilidade para explorar um grande número de ideias, comunicar conceitos essenciais, facilitar a co-criação e obter feedback preliminar \cite{paust2025integrative, mager2023product, Vieira2025, asbjornsen2022echange, kumar2023rheumatology, lee2023industry, seko2024transitions, soto2023prototyping, villa2022integratedcare, Suryawati2024, wang2023smartproducts}.
+
+Já em relação aos protótipos de \textbf{média fidelidade}, ferramentas como \textit{wireframes} detalhados, \textit{mockups} digitais mais elaborados (ex: usando Figma \cite{villa2022integratedcare}) e algumas simulações básicas (ex: concierge \cite{Suryawati2024}) são adequadas para as fases intermediárias. Elas permitem refinar a estrutura, o fluxo de navegação, o layout da interface e obter feedback mais específico sobre a organização e a sequência do serviço ou interface digital \cite{villa2022integratedcare, Suryawati2024, nguyen2022human}.
+
+Se tratando da \textbf{alta fidelidade}, protótipos interativos digitais (ex: usando Marvel app \cite{asbjornsen2022echange} ou Figma \cite{villa2022integratedcare}), protótipos funcionais de hardware (IoT) \cite{Kim2024}, simulações em escala real ou em laboratórios \cite{seko2024transitions, soto2023prototyping, yan2022pssvalue}, testes piloto \cite{seko2024transitions} e \textit{digital twins} \cite{mager2023product} são empregados nas fases mais avançadas. Sua adequação está na capacidade de permitir testes de usabilidade detalhados, avaliar a viabilidade técnica, validar a experiência do usuário de forma realista e coletar dados precisos antes da implementação final \cite{paust2025integrative, asbjornsen2022echange, mager2023product, villa2022integratedcare, Kim2024}.
+
+\subsection{Comparação por funcionalidade e propósito principal}
+
+As ferramentas também podem ser comparadas com base na sua função primária:
+
+\begin{itemize}
+	\item \textbf{Foco na comunicação vs. teste}: Algumas ferramentas são otimizadas para comunicar ideias e facilitar o entendimento compartilhado, especialmente em estágios iniciais ou em sistemas complexos (ex: protótipos descritivos, \textit{storyboards}, animações) \cite{wang2023smartproducts, lee2023industry, paust2025integrative}. Outras são mais adequadas para testar funcionalidades específicas, interações ou a usabilidade geral (ex: protótipos interativos, testes A/B, protótipos funcionais) \cite{villa2022integratedcare, asbjornsen2022echange, Kim2024}.
+	
+	\item \textbf{Foco na experiência vs. representação}: \citeonline{soto2023prototyping} e \citeonline{paust2025integrative} destacam a distinção entre ferramentas que permitem vivenciar a interação (\textit{role-playing}, simulações imersivas) e aquelas que apenas a representam visual ou fisicamente. A prototipagem de serviços frequentemente valoriza o aspecto experiencial.
+	
+	\item \textbf{Funcionalidades específicas}: Em áreas como IoT, as ferramentas são comparadas pela sua capacidade de integrar \textit{hardware}, \textit{software} e rede de forma funcional \cite{Kim2024}. No design de cores, as ferramentas são comparadas por funcionalidades como geração de paletas, aplicação de cores ou checagem de contraste \cite{hegemann2024palette}. \textit{Digital twins} se diferenciam de protótipos estáticos pela sua capacidade de simulação dinâmica \cite{mager2023product}.
+	
+\end{itemize}
+
+\subsection{Comparação em relação aos usuários e seu contexto}
+
+A adequação de uma ferramenta também pode depender de quem a utiliza e em que contexto. Nesse sentido, podem variar com base na habilidade técnica do designer, preferências disciplinares e suporte à colaboração e integração.
+
+Primeiramente, a habilidade técnica do designer é importante pois as ferramentas variam quanto à necessidade de conhecimento técnico. Ferramentas \textit{``low-code''} ou \textit{``no-code''} (como plataformas IoT com interfaces \textit{drag-and-drop}) são comparadas favoravelmente a ferramentas que exigem programação quando o público são designers sem background técnico \cite{Kim2024}.
+
+Em relação às preferências disciplinares, diferentes disciplinas dentro do design (ex: design de interação vs. design industrial) podem ter preferências distintas ou usar a mesma ferramenta (ex: \textit{storyboard}) com focos diferentes \cite{wang2023smartproducts}.
+
+Finalmente, em referência ao suporte à colaboração, ferramentas podem ser comparadas por sua capacidade de facilitar a comunicação interdisciplinar (atuando como ``objetos de fronteira'' \cite{paust2025integrative}) e a co-criação \cite{soto2023prototyping}. A divisão entre ferramentas (ex: paleta de cores separada do software de design principal) é vista como uma desvantagem \cite{hegemann2024palette}.
+
 %4.6 Entradas e saídas do processo de prototipação
 %Descreva as entradas necessárias (ex.: dados de usuários, mapas de jornada, requisitos do serviço).
 
 %Detalhe as saídas esperadas (ex.: protótipos iterativos, feedback documentado, decisões de design).
+
+\section{Entradas e saídas do processo de prototipagem em DS}
+
+A sexta e última questão de pesquisa aborda as entradas necessárias e as saídas esperadas do processo de prototipagem no DS. A análise dos artigos selecionados demonstra que a prototipagem não opera isoladamente, mas funciona como um processo de transformação que consome informações e recursos específicos (entradas) e gera resultados tangíveis e intangíveis cruciais (saídas) para o avanço do projeto de serviço.
+
+\subsection{Entradas necessárias para a prototipagem em DS}
+
+Para que a prototipagem seja eficaz, ela requer uma série de insumos advindos das fases anteriores do processo de design e do contexto do projeto:
+
+\begin{itemize}
+	\item \textbf{Conceitos, ideias e cenários}: A matéria-prima fundamental são as ideias, conceitos preliminares, propostas de valor, ou cenários de uso gerados nas fases de ideação, pesquisa ou definição \cite{iriarte2023service, mager2023product, paust2025integrative, schlott2024design, you2022applying, asbjornsen2022echange, giraldo2024ecotourism, kumar2023rheumatology, lee2023industry, milton2021eatingdisorders, seko2024transitions, soto2023prototyping, Suryawati2024}.
+	
+	\item \textbf{Compreensão do usuário e contexto}: Informações sobre as necessidades, valores, dores, comportamentos e contexto dos usuários (muitas vezes consolidadas em personas, arquétipos ou jornadas) são essenciais para direcionar a criação de protótipos relevantes e centrados no ser humano \cite{quintero2021interdisciplinary, iriarte2023service, asbjornsen2022echange, dehmel2021weather, kumar2023rheumatology, lambe2022capabilities, milton2021eatingdisorders, soto2023prototyping}.
+	
+	\item \textbf{Requisitos, critérios e diretrizes}: Requisitos funcionais e não funcionais, critérios de design, diretrizes (de marca, técnicas, de acessibilidade) ou o conteúdo específico a ser incluído orientam a forma e a função dos protótipos \cite{quintero2021interdisciplinary, nguyen2022human, asbjornsen2022echange, villa2022integratedcare, Suryawati2024, hegemann2024palette}.
+	
+	\item \textbf{Feedback e restrições Anteriores}: O processo é iterativo, portanto, o feedback de testes ou avaliações de protótipos anteriores, bem como as restrições do projeto (tempo, orçamento, tecnologia), servem como entradas importantes para as rodadas seguintes de prototipagem \cite{hegemann2024palette, asbjornsen2022echange, villa2022integratedcare, Suryawati2024}.
+	
+	\item \textbf{Intenção e foco}: O propósito específico da prototipagem naquele momento (explorar? comunicar? testar usabilidade? validar viabilidade?) define o tipo de protótipo a ser criado e como ele será avaliado \cite{paust2025integrative, mager2023product}.
+	
+	\item \textbf{Ferramentas e materiais}: Recursos tangíveis como papel, software de design (ex: Figma), kits de hardware (ex: ESPBoost), materiais de modelagem (argila, etc.) e ambientes de laboratório são as entradas físicas ou digitais necessárias para a construção do protótipo \cite{Kim2024, villa2022integratedcare, lee2023industry, soto2023prototyping, yan2022pssvalue}.
+	
+	
+\end{itemize}
+
+\subsection{Saídas esperadas da prototipagem em DS}
+
+O processo de prototipagem gera uma variedade de resultados que impulsionam o projeto de diferentes maneiras:
+
+\begin{itemize}
+	\item \textbf{Os protótipos como artefatos}: Todos os artigos evidenciam que a saída mais óbvia são os próprios protótipos, que podem variar desde esboços conceituais e \textit{mockups} visuais até modelos físicos, simulações experienciais, interfaces interativas ou protótipos funcionais de hardware/software.
+	
+	\item \textbf{Feedback, dados e resultados de testes}: A interação com os protótipos gera feedback qualitativo (comentários, sugestões, observações de comportamento) e quantitativo (métricas de usabilidade, resultados de validação de hipóteses), identificando pontos fortes, fracos e áreas para melhoria \cite{hegemann2024palette, iriarte2023service, paust2025integrative, asbjornsen2022echange, giraldo2024ecotourism, kumar2023rheumatology, lee2023industry, seko2024transitions, villa2022integratedcare}.
+	
+	\item \textbf{Aprendizagem, compreensão e empatia}: A prototipagem gera aprendizados importantes sobre a solução, os usuários e o contexto; aprofunda a compreensão do problema; valida (ou refuta) conhecimentos e suposições; constrói um entendimento compartilhado na equipe; e pode aumentar significativamente a empatia pelos usuários \cite{hegemann2024palette, quintero2021interdisciplinary, mager2023product, paust2025integrative, you2022applying, soto2023prototyping, lambe2022capabilities}.
+	
+	\item \textbf{Conceitos refinados e especificações para implementação}: Com base no feedback e aprendizado, os conceitos de serviço são refinados e detalhados. A prototipagem pode resultar em alternativas selecionadas, decisões de design justificadas e especificações mais claras (ex: user stories, requisitos técnicos, guias de estilo, manuais) que servem como entrada para a fase de desenvolvimento ou implementação \cite{hegemann2024palette, iriarte2023service, nguyen2022human, Vieira2025, schlott2024design, asbjornsen2022echange, milton2021eatingdisorders, villa2022integratedcare, Suryawati2024}.
+	
+	\item \textbf{Resultados organizacionais e para stakeholders}: Além dos resultados diretos no design, a prototipagem também pode facilitar a comunicação interna e externa, alinhar stakeholders, construir consenso, justificar decisões estratégicas, empoderar participantes (especialmente em co-design) e gerar força para o projeto \cite{quintero2021interdisciplinary, iriarte2023service, mager2023product, paust2025integrative, lambe2022capabilities}.
+\end{itemize}
+
+\subsection{Prototipagem como ponte iterativa}
+
+É crucial notar que as saídas da prototipagem frequentemente se tornam entradas para a próxima iteração ou fase. O feedback refina o protótipo seguinte; os aprendizados informam novas ideias; os protótipos testados justificam decisões de desenvolvimento. Esse ciclo de \textit{input-output} reforça o papel da prototipagem como um motor do processo iterativo de design \cite{paust2025integrative, leinonen2023service}.
 
 
  
